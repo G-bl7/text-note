@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles Management</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="icons/us dn-89.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Add/Edit Profile Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Add New Profile</h2>
+            <form id="profileForm">
+                <label for="profileName">Profile Name:</label>
+                <input type="text" id="profileName" name="profileName" required>
+                <button type="submit" id="saveProfileButton">Save</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <button id="addProfileButton">Add New Profile</button>
+
+        <h1>Profiles Management</h1>
+        <table id="profilesTable">
+            <thead>
+                <tr>
+                    <th>Profile Name</th>
+                    <th class="columnth">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="defaultProfileRow">
+                <!-- Default profile will be loaded here dynamically -->
+            </tbody>
+            <tbody id="profilesList">
+                <!-- Profiles will be loaded here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

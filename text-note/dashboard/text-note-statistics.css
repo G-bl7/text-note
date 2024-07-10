@@ -1,0 +1,67 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 0; /* Ensure no default margin */
+}
+
+.topTitle {
+  text-align: center;
+}
+
+.container {
+  width: 90%; /* Set the flexible width */
+  height: 85vh; /* Set the flexible height */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px 20px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: auto; /* Enable vertical scrolling if content overflows */
+  position: relative; /* Ensure relative positioning */
+  margin-top: 15px;
+}
+
+  
+
+.table-container {
+  overflow-y: auto; /* Enable vertical scrolling for the table */
+  max-height: calc(100% - 90px); /* Adjust max height to fit remaining space */
+  margin-top: 10px; /* Adjust as needed */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.result-info-left {
+  position: fixed;
+  background-color: #f0f0f0;
+  padding: 5px;
+  margin: 10;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1000;
+}
+.default_pofile {
+  background-color: #e0f7fa;
+  color: #000;
+}
+
+.deletedProfilesList {
+  background-color: #fa7b44;
+  color: #000;
+}

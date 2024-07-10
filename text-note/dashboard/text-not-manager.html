@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="text-not-manager.css">
+  <link rel="icon" href="icons/fg-co-07.png" type="image/png">
+  <title>Text Note</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- Display total rows and filtered results -->
+  <div class="result-info-left">
+    <p>Profile Name: <span id="profleName">0</span> / <span id="profileId">0</span></input></p>
+    <p>Total Rows: <span id="totalRows">0</span></p>
+  </div>
+  <div class="result-info-right">
+    <p>Filtered Results: <span id="filteredResults">0</span></p>
+    <p>Selected Row: <span id="SelectedRow">0</span></p>
+  </div>
+
+  <div class="container">
+    <h3 class="topTitle">Edit Text Note</h3>
+    <div>
+      <input type="checkbox" id="UseDefaultProfile" title="Default Profile in use" checked hidden>
+      <button id="exportButton">Export</button>
+      <input type="file" id="importFile" style="display: none;">
+      <button id="importButton">Import</button>
+      <button id="deleteSelectedButton">Delete Selected</button>
+    </div>
+    <div id="multi-line-loader">
+      <div class="line line1"></div><div class="line line2"></div><div class="line line3"></div><div class="line line4"></div>
+    </div>
+
+    <div class="table-container" >
+      <table id="mainTextNnoteTable">
+        <thead>
+          <tr>
+            <th><input type="checkbox" id="selectAll"></th>
+            <th>
+              <label for="searchText">Text</label><br>
+              <input type="text" id="searchText" class="search-input" placeholder="Search text">
+            </th>
+            <th>
+              <label for="searchNote">Note</label><br>
+              <input type="text" id="searchNote" class="search-input" placeholder="Search note">
+            </th>
+            <th>Timestamp</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="TextNoteTbody">
+          <!-- Data rows will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="text-not-manager.js"></script>
+</body>
+
+</html>

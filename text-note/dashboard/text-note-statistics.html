@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="text-note-statistics.css" />
+    <link rel="shortcut icon" href="icons/fe 98op.png" type="image/x-icon">
+    <title>Statistic For User</title>
+  </head>
+  <body>
+    <!-- Display total users and sum of statistics -->
+    <div class="result-info-left">
+      <p>Total Users: <span id="totalUsers">0</span></p>
+      <p>Sum of Statistics: <span id="sumStatistics">0</span></p>
+    </div>
+
+    <div class="container">
+      <h3 class="topTitle">Statistic For User</h3>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Statistic Text -/- Note</th>
+            </tr>
+          </thead>
+          <tbody id="defaultProfileRow" class="default_pofile">
+            <!-- Default profile will be loaded here dynamically -->
+          </tbody>
+          <tbody id="profilesList">
+            <!-- Profiles will be loaded here dynamically -->
+          </tbody>
+          <tbody id="deletedProfilesList" class="deletedProfilesList">
+            <!-- Deleted Profiles will be loaded here dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="text-note-statistics.js"></script>
+  </body>
+</html>
